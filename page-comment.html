@@ -1,37 +1,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html lang="en">
  <head> 
-  <meta charset="UTF-8"> 
-  <meta content="width=device-width, initial-scale=1" name="viewport"> 
-  <meta name="x-apple-disable-message-reformatting"> 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-  <meta content="telephone=no" name="format-detection"> 
-  <title>template review with comment</title> 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href="https://cdn.jsdelivr.net/npm/vue-loading-overlay@3/dist/vue-loading.css" rel="stylesheet">
    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    <script src="https://cdn.jsdelivr.net/npm/vue-loading-overlay@3"></script>
-   <!-- or point to a specific vue-select release -->
-<script src="https://unpkg.com/vue-select@3.0.0"></script>
-<link rel="stylesheet" href="https://unpkg.com/vue-select@3.0.0/dist/vue-select.css">
+  <base target="_top">
+  <meta charset="UTF-8"> 
+  <meta content="width=device-width, initial-scale=1" name="viewport"> 
+  <meta name="x-apple-disable-message-reformatting"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta content="telephone=no" name="format-detection"> 
+  <title>template review with comment</title> 
+  
    <meta name="referrer" content="same-origin">
-  <!--[if (mso 16)]>
-    <style type="text/css">
-    a {text-decoration: none;}
-    </style>
-    <![endif]--> 
-  <!--[if gte mso 9]><style>sup { font-size: 100% !important; }</style><![endif]--> 
-  <!--[if gte mso 9]>
-<xml>
-    <o:OfficeDocumentSettings>
-    <o:AllowPNG></o:AllowPNG>
-    <o:PixelsPerInch>96</o:PixelsPerInch>
-    </o:OfficeDocumentSettings>
-</xml>
-<![endif]--> 
   <style type="text/css">
 #outlook a {
 	padding:0;
@@ -116,76 +101,24 @@ a[x-apple-data-detectors] {
                    </table></td> 
                  </tr> 
                </table></td> 
-             </tr> 
-             <tr> 
-              <td align="left" style="padding:0;Margin:0;padding-top:20px;padding-left:20px;padding-right:20px"> 
-               <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
-                 <tr> 
-                  <td align="center" valign="top" style="padding:0;Margin:0;width:558px"> 
-                   <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
-                     <tr> 
-                      <td align="left" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333">Catatan approval :</p></td> 
-                     </tr> 
-                   </table></td> 
-                 </tr> 
-               </table></td> 
-             </tr> 
-             <tr>
-                <div class="panel-group">
-                    <div class="panel panel-warning">
-                      <div class="panel-heading">PENCARIAN</div>                 
-                      <div class="panel-body">
-                        <form v-on:submit.prevent="">
-                            <textarea v-model="catatan" width='100%' placeholder="isi catatan"></textarea>
-                            <div>{{catatan}}</div>
-                            <div class="form-group">
-                                <button class="btn btn-primary" @click="submit('approve')">SETUJUI</button>
-                                <button class="btn btn-danger" @click="submit('reject')">TOLAK</button>
-                            </div>
-                        </form>
-                      </div>
-                    </div>
-                </div>
              </tr>
              <tr>
               <td align="left" class="esd-amp-form" style="padding:0;Margin:0;padding-top:20px;padding-left:20px;padding-right:20px">
-                <form id="form-1614665468198" 
-                  method="POST" 
-                  action="https://script.google.com/a/macros/amikom.ac.id/s/AKfycbzTlIWUnXyXnzgGqsVI_4Kt16Y3I5GLXavyzjYS02gIUZZxup4p-tjjgojGW0_3ZSU/exec" 
-                  target="_blank" action-xhr on="submit-success:hide-form-1614665468198.hide;" custom-validation-reporting="show-all-on-submit">
-                    <table width="100%" cellspacing="0" cellpadding="0">
-                        <tbody>
-                            <tr id="hide-form-1614665468198">
-                                
-                                <td class="esd-amp-form-input-area" align="center" valign="top">
-                                    <table width="100%" cellspacing="0" cellpadding="0">
-                                        <tbody>
-                                            <tr>
-                                                <td align="left" class="es-p10b esd-block-amp-form-input-text"><textarea rows="3" id="input_textarea" name="catatan" placeholder="tulis catatan sebelum menyetujui atau menolak" required maxlength="1000" style="margin-top: 2px; margin-bottom: 2px; height: 160px; width:100%;"></textarea><span visible-when-invalid="valueMissing" validation-for="input_textarea"></span></td>
-                                            </tr>
-                                            <tr>
-                                                <td align="left" class="es-p10 esd-block-amp-form-submit">
-                                                    <span><button name="status_review" value="approved" type="submit" class="es-button">Disetujui</button>
-                                                    <button name="status_review" value="rejected"  type="submit" class="es-buttonr">Ditolak</button></span></td>
-                                            </tr>
-                                           
-                                        </tbody>
-                                    </table>
-                                    <table>
-                                       <tr>
-                                              <textarea id="label_id_pengajuan" name="id_pengajuan"></textarea>
-                                              <textarea id="label_keperluan" name="keperluan"></textarea>
-                                              <textarea id="label_nama" name="nama"></textarea>
-                                              <textarea id="label_email_pemohon" name="email_pemohon"></textarea>
-                                              <textarea id="label_attachment" name="attachment"></textarea>
-                                              <textarea id="label_tgl_pengajuan" name="tgl_pengajuan"></textarea>
-                                            </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </form>
+                <div class="panel-group">
+                  <div class="panel panel-warning">
+                    <div class="panel-heading">FORM FEEDBACK</div>                 
+                    <div class="panel-body">
+                      <form v-on:submit.prevent="">
+                          <textarea  style="margin-top: 2px; margin-bottom: 2px; height: 160px; width:100%;" v-model="catatan" width='100%' placeholder="isi catatan"></textarea>
+                          {{catatan}}
+                          <div class="form-group">
+                              <button class="btn btn-primary" @click="submit('approve')">SETUJUI</button>
+                              <button class="btn btn-danger" @click="submit('reject')">TOLAK</button>
+                          </div>
+                      </form>
+                    </div>
+                  </div>
+              </div>
             </td>
              </tr>
            </table></td> 
@@ -199,65 +132,54 @@ a[x-apple-data-detectors] {
  </body>
  <script>
     Vue.use(VueLoading);
-    Vue.component('v-select', VueSelect.VueSelect);
-    // var data = <?!= JSON.stringify(dataFromServerTemplate) ?>; //Stores the data directly in the javascript code
+    // var dataPengajuan = <?!= JSON.stringify(dataFromServerTemplate) ?>; //Stores the data directly in the javascript code
     var dataPengajuan ={ 
           id_pengajuan: 'FR-IF-0233', 
-          nama_pemohon: 'param.nama_pemohon',
+          nama_pemohon: 'zakki',
           keperluan: 'param.keperluan',
-          email_pemohon: 'param.email_pemohon',
-          status_review: 'param.status_review',
-          tgl_pengajuan: 'param.tgl_pengajuan',
+          email_pemohon: 'omayib@gmail.com',
+          status_review: 'pending',
+          tgl_pengajuan: '11/11/2022',
           attachment: 'param.attachment',
-          status_review: 'param.status_review',
-          scriptid:'AKfycbxhMo38JTl7A7KW-ERc7ivueUZBXiQZKpD4nRSMHWHeKhtpqNGK4aI5tBzKev8Yj1WI'
+          status_review: 'pending',
+          scriptid:'AKfycbzOyRCcR2jPRjnWDSw1_GNF94qex7JkPl2iln4pauGnMazCUx5uc3AhOGZm9dydhBc8'
            }
-    function initialize() {
-        document.getElementById("label_id_pengajuan").value = dataPengajuan.id_pengajuan;
-        document.getElementById("label_keperluan").value =dataPengajuan.keperluan;
-        document.getElementById("label_nama").value =dataPengajuan.nama_pemohon;
-        document.getElementById("label_email_pemohon").value =dataPengajuan.email_pemohon;
-        document.getElementById("label_attachment").value =dataPengajuan.attachment;
-        document.getElementById("label_tgl_pengajuan").value =dataPengajuan.tgl_pengajuan;
-
-        document.getElementById("label_id_pengajuan").style.visibility ="hidden";
-        document.getElementById("label_keperluan").style.visibility ="hidden";
-        document.getElementById("label_nama").style.visibility ="hidden";
-        document.getElementById("label_email_pemohon").style.visibility ="hidden";
-        document.getElementById("label_attachment").style.visibility ="hidden";
-        document.getElementById("label_tgl_pengajuan").style.visibility ="hidden";
-    }
-    // use onload or use jquery to call your initialization after the document loads
-    window.onload = initialize;
-
-    var key="AKfycbypIWexGqu0cfWm6MNwPpJDG8nw1t9IQ1muEGxMSFbj-G0dZ0CNH0YNTicIw0_Pa6lk";
+    var key="AKfycbzGlt-hzVa5elzU-qpNGnaudHopwp6csiqO-wR21112qeigdq-eIdqVNbGYfpnE4Lxg";
     var baseUrl=`https://script.google.com/macros/s/${key}/exec`;
 var app = new Vue({
    el: '#app',
    data:{
         catatan:""
    },
+    components: {
+        Loading: VueLoading
+    },
    methods:{
     submit:function(e){
+        dataPengajuan.catatan = this.catatan;
+        dataPengajuan.status = e;
         console.log(dataPengajuan);
-        var urlProfile = `${baseUrl}`;
-        axios({
-                    method: "post",
-                    url: urlProfile,
-                    data: {"catatan":this.catatan,
-                            "status":e,
-                            "idPengajuan":dataPengajuan.id_pengajuan},
-                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                                "Access-Control-Allow-Origin": "*"
-                    })
-                    .then(function (response) {
-                        var _profil=response.data.data;
-                        console.log(_profil);
-                    })
-                    .catch(function (response) {
-                        //handle error
-                        console.log(response);
-                    });
+        // var urlProfile = `${baseUrl}`;
+        // let loader = this.$loading.show({
+        //             loader: 'dots'
+        //         });
+        // axios({
+        //             method: "post",
+        //             url: urlProfile,
+        //             data: dataPengajuan,
+        //             headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        //                         "Access-Control-Allow-Origin": "*"
+        //             })
+        //             .then(function (response) {
+        //                 var _profil=response.data.data;
+        //                 console.log(_profil);
+        //                 loader.hide();
+        //             })
+        //             .catch(function (response) {
+        //                 //handle error
+        //                 console.log(response);
+        //                 loader.hide();
+        //             });
     }
    }
 
